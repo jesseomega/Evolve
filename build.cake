@@ -173,12 +173,12 @@ Task("Default")
     .IsDependentOn("Clean")
     .IsDependentOn("Restore")
     .IsDependentOn("Build")
-    .IsDependentOn("Test")
-    .IsDependentOn("Test Core")
-    .IsDependentOn("Pack")
-    .IsDependentOn("Restore Test-Package")
-    .IsDependentOn("Build Test-Package")
-    .IsDependentOn("Build Test-Package Core");
+    //.IsDependentOn("Test")
+    //.IsDependentOn("Test Core")
+    .IsDependentOn("Pack");
+    //.IsDependentOn("Restore Test-Package")
+    //.IsDependentOn("Build Test-Package")
+    //.IsDependentOn("Build Test-Package Core");
 
 Task("Test-Package")
     .IsDependentOn("Restore Test-Package")
